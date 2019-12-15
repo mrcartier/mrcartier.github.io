@@ -1,62 +1,393 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="MrCartier : Github Pages Home">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="digital/responsive resume" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>Responsive Resume Template</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <title>MrCartier</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.0/Chart.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Poppins|Just+Another+Hand" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.css">
   </head>
 
-  <body>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger pl-2" href="#page-top">
+        <span class="d-none d-lg-block">
+          <img
+            class="img-fluid img-profile mb-3"
+            src="avatar.jpg"
+            alt="Profile Picture"
+          />
+        </span>
+      </a>
+      <button
+        class="navbar-toggler m-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mrcartier">View on GitHub</a>
+      <div
+        class="collapse navbar-collapse text-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav d-block">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#certificates"
+              >Certificates</a
+            >
+          </li>-->
 
-          <h1 id="project_title">MrCartier</h1>
-          <h2 id="project_tagline">Github Pages Home</h2>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <!--<li class="nav-item">
+            <a
+              class="nav-link js-scroll-trigger"
+              href=""
+              target="_blank"
+              rel="noopener"
+              >Blog</a
+            >
+          </li>-->
+        </ul>
 
-        </header>
-    </div>
+        <div>
+          <ul
+            class="list-inline list-social-icons icon-circle icon-zoom mt-5 mb-0"
+          >
+            <!--<li class="list-inline-item">
+              <a href="" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>-->
+            <li class="list-inline-item">
+              <a href="https://github.com/mrcartier">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <!--<li class="list-inline-item">
+              <a href="" target="_blank" rel="noopener">
+                <i class="fab fa-stack-overflow"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" target="_blank" rel="noopener">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-my-github-pages-homepage" class="anchor" href="#welcome-to-my-github-pages-homepage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to my (GitHub Pages) Homepage.</h3>
+    <div class="container-fluid p-0">
+      <section class="resume-section p-2 p-lg-2" id="about">
+        <div class="my-auto">
+          <p class="mobile-name">
+            <img class="mobile-img" src="avatar.jpg" alt="Profile Picture" />
+          </p>
+          <p class="mobile-name">Gerry <span class="family-name"> Carter</span></p>
+          <h1 class="mb-3 mt-5">
+            Gerry
+            <span class="family-name"> Carter</span>
+          </h1>
+          <p class="mobile-profession">
+            Technical Project Manager
+          </p>
+          <h4 class="mb-4">
+            Technical Project Manager
+          </h4>
 
-<p>This page details some of my work. You can see my projects/code using the blue 'View on Github' image at the top OR by clicking on <a href="https://github.com/mrcartier" class="user-mention">@mrcartier</a>. I'm a technology consultant based in Queens, NY involved in smart home/building automation security solutions and mobile application development. I regularly interface with control system professionals, engineers and other executive personnel when working in commercial settings. In contrast, residential settings afford more of an opportunity to manage the project from A - Z. Both present a different set of challenges and rewards. </p>
+          <p class="mb-3">
+            Hello and welcome to my digital resume. I'm a technology professional based in Queens, NY. I like interfacing with C-level executives, stakeholders, developers and other relevant personnel to make certain all work toward common goals. The ability to dive deeply into technical details while still being able to see the big picture helps me to translate technical ideas and language to non-technical audiences. This way I make sure the ball <b>never gets dropped</b> on any project.  
+          </p>
 
-<h3>
-<a id="current-state-of-the-industry" class="anchor" href="#current-state-of-the-industry" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current State of the Industries</h3>
+          <p>
+            Besides that I enjoy that numerous museums and exhibits in the city. Also, when I'm able and the weather permits I'll head upstate to do some fishing.
+          </p>
 
-<p>One common theme I regularly see is a shift from being isolated to full enterprise integration; from RS-232 to cat5/6. Through systems integration and network technologies control systems are becoming more analogous to IT systems in terms of connectivity. However most systems lack robust security as they are unable to run anti-virus, malware or other similar software applications. This leads to a situation where none of the communication is private and anyone who has the system IP address can gain unlimited access.</p>
-<p>With a mobile device (phone or tablet) users can monitor and control the system remotely through several solutions that depending on the manufacturer range from a proprietary application to series of web pages. Mobile development also brings redundancy; in the event the primary touchscreen/touchpanel interfaces fail the mobile device can still be used to control the system.</p>
-<h3>
-<a id="the-future" class="anchor" href="#the-future" aria-hidden="true"><span class="octicon octicon-link"></span></a>The future</h3>
+          
+          <p class="mb-5 mt-5">
+            <i class="fas fa-user-tag"></i> #driven #team-oriented #communicator
+            #hard-working #dependable #organized #positive #funny
+          </p>
+        </div>
+      </section>
 
-<p>More of our home devices will be able to be controlled over the internet (Nest Thermostat, August Smart Lock, DVR, garage door, etc.) yet it remains to be seen if/when those connections will rival traditional IT security. Right now people are willing to sacrifice security for convenience, only time will tell if that will change.</p>
-<p>REST APIs and MBaaS are helping mobile applications become more powerful. The average person spends just as much or more time on their phone or tablet as they do on the computer when checking emails. But people are starting to use their mobile devices for banking, paying bills and other traditional functions in addition to email and social networking. We can expect the use of mobile devices and applications to steadily increase over time. </p>
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+      <section class="resume-section p-2 p-lg-2" id="skills">
+        <h2 class="mb-5">&lt; Skills &gt;</h2>
+        <div class="my-auto">
+          <ul class="list-inline list-icons mb-4">
+            <li class="list-inline-item">
+              <i class="devicon-android-plain" title="Android"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-html5-plain" title="HTML"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-css3-plain" title="CSS"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-jquery-plain" title="jQuery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-bootstrap-plain" title="Bootstrap 4"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-nginx-plain" title="Nginx"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-mobile-alt" title="Mobile Web Dev"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-aws" title="AWS"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-flask" title="Flask"></i></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-python-plain" title="Python3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-linux-plain" title="Linux"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-github-plain" title="Github"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-trello-plain" title="Trello"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-jira" title="Jira"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-slack" title="Slack"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-globe" title="Remote Team Management"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-sitemap" title="Strategic Planning"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-project-diagram" title="Process Engineering"></i>
+            </li>
+          </ul>
 
-<p>To reach me via github: <a href="https://github.com/mrcartier" class="user-mention">@mrcartier</a></p>
+          <div class="mt-4 mb-4" id="pie-chart">
+                <canvas id="pieChart">
+                </canvas>
+          </div>
+
+        <p class="pt-3">
+          <i class="fas fa-user-tag"></i> #Organization
+          #TimeManagement #Communication #Code
+        </p>
+      </section>
+
+      <section class="resume-section p-2 p-lg-2" id="experience">
+        <h2 class="mb-4">&lt; Experience &gt;</h2>
+
+        <div class="my-auto">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card mb-5">
+                <img class="mx-auto img-fluid" src="projectmgr.jpg" height="200" width="200" alt="centered-image"/>
+                <div class="card-body pb-0">
+                  <p>January 2016 - Present</p>
+                  <h5 class="card-title">Technical Project Manager</h5>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      Timeline and budget tracking
+                    </li>
+                    <li class="list-group-item">
+                      Vendor Management
+                    </li>
+                    <li class="list-group-item">
+                      Liaison between management and technical personnel
+                    </li>
+                    <li class="list-group-item">
+                      Agile SDLC
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card mb-5">
+                <img class="mx-auto img-fluid" src="desktopsupport.jpg" height="200" width="200" alt="blogging" />
+                <div class="card-body pb-0">
+                  <p>Jan 2006 - Sept 2015</p>
+                  <h5 class="card-title">Technical Support Specialist</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      On-site and remote desktop support
+                    </li>
+                    <li class="list-group-item">
+                      Lecture capture and upload to course management system
+                    </li>
+                    <li class="list-group-item">
+                      AV system operation and end user manual design 
+                    </li>
+                    <li class="list-group-item">
+                      Video Conference and TelePresence engineering and event support
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section p-2 p-lg-2" id="education">
+        <h2 class="mb-4">&lt; Education &gt;</h2>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="card mb-4">
+              <div class="edu-icons">
+                <img class="img-fluid" src="isu.jpg" height="200" width="200" alt="isu">
+                <!--<i class="fas fa-university fa-5x"></i>-->
+              </div>
+              <div class="card-body pb-0">
+                <p>2010 - 2012</p>
+                <h5 class="card-title">Indiana State University</h5>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Master of Science, Electronics and Computer Technology</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section p-2 p-lg-2" id="contact">
+        <div class="my-auto">
+          <h2 class="mb-3">&lt; Contact &gt;</h2>
+
+          <ul class="fa-ul mb-4 ml-0">
+            <li id="mail-address">
+              <a href="mailto:tech@impdevt.com">
+                <i class="fas fa-envelope-open mr-2"></i>tech@impdevt.com</a
+              >
+            </li>
+            <li><i class="fas fa-map-marker-alt mr-2"></i>Queens, New York</li>
+          </ul>
+
+          <!--<p>
+            ...or leave your message below and I will be back to you as soon as
+            possible.
+          </p>
+
+          <form
+            class="contact-form"
+            method="POST"
+            action="https://formspree.io/tech@impdevt.com"
+          >
+            <div class="form-group">
+              <input
+                type="name"
+                class="form-control"
+                placeholder="Name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                type="text"
+                placeholder="Message"
+                rows="7"
+                name="name"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Submit</button>
+          </form>-->
+        </div>
       </section>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+    <!-- font-awesome script -->
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/pie_chart.js"></script>
   </body>
 </html>
